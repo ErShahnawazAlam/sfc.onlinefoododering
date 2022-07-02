@@ -1,0 +1,217 @@
+/* .collapse-package{
+    width: 500px;
+    height: 300px;
+    margin-bottom:30px ; */
+}
+
+.package-box{
+    width: 40px;
+}
+.courses{
+    
+}
+.job{
+    background-color: #ABABFF ;
+    max-height: auto;
+    padding-bottom: 50px;
+}
+.job  h4{
+ font-size: 18px;
+}
+
+.job p {
+    font-size: 14px;
+}
+.guide{
+    margin-top: 50px !important;
+}
+
+.carousel-caption{
+    transform: translateX(-30%) ;
+    transform: translateY(30%) ;
+    /* transform:translate(-25%,-50%); */
+    bottom: initial;
+    top: 50%;
+}
+
+.button-explore{
+    margin-left: 50px !important;
+}    
+
+.carousel-caption  h1 {
+    font-size: 3.0em !important;
+    font-family: cursive; 
+}
+.carousel-caption  h1{
+    color: #fed766 !important;
+}
+
+.carousel-caption >  h1 > span {
+    color: #fe4a49 !important;
+    font-family: cursive;
+}
+.carousel-caption p{
+    color:#fff !important;
+    font-family: cursive;
+}
+.button-explore{
+    margin-top: 50px;
+}
+.service{
+    background-color: #ABABFF ;
+    max-height: auto;
+}
+.card-body h2 {
+    
+}
+.card-body p{
+    color: #868E96;
+}
+.imgs {
+    transition: transform .2s;
+    height: auto;
+}
+.imgs:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 28px 0px rgba(11,28,27,0.74);
+}
+.service-head{
+    font-size: 45px !important;
+}
+
+.contactus-div{
+    
+}
+.loc-icon{
+    width: 25px !important;
+    height: 25px !important;
+}
+.login-icon:hover{
+    color: red !important;
+}
+.form-file{
+    width: 104% !important;
+}
+.about1{
+    width: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px){
+    .coll-butn{
+        width: 180px;
+        margin-left:-60px !important;
+    }
+    .carousel-content h1{
+        font-size: 1.0em !important;
+    }
+    .carousel-content p{
+        font-size: 1.0em !important;
+        width: 200px;
+    }
+    .slides{
+        margin-top: 80px;
+    }
+    .card{
+        /* margin-right: 3rem !important; */
+    }
+    .faq-btn1{
+        margin-right: 11.5em !important;
+    }
+    .faq-btn2{
+        margin-left: 13.3em !important;
+        margin-top: 1.5em !important;
+    }
+    .card-s{
+        margin-left: 23px !important;
+    }
+    .guide{
+        margin-left: 0px !important;
+    }
+    .service-head{
+        font-size: 45px !important;
+    }
+    .grt{
+        color: #44b322 !important;
+        cursor: pointer !important;
+        /* margin-left: 140px !important; */
+    }
+    .immg{
+        margin-left: 120px !important;
+        padding-top: 16px !important;
+    }
+    .contact-us{
+        margin-bottom: 100px !important;
+    }
+    .contact-form{
+        margin-right: 50px;
+    }
+    .contact-element{
+        width: 300px !important;
+        margin-left: -38px !important;
+    }
+    .form-submit > button{
+        width: 100px !important;
+    }
+    .login-form{
+        width: 130% !important;
+        margin-right: 0 !important;
+
+    }
+    .login-form button{
+        width: 120px !important;
+    }
+}
+
+.wrapper a{
+    color: #fff;
+   
+}
+
+.hover-fx{
+    font-size: 2rem;
+    /* display: inline-block; */
+    cursor: pointer;
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    line-height: 14px;
+border-radius: 50%;
+padding: 2px;
+color: #fff;
+position: relative;
+text-align: center;
+background-color: rgba(255, 255, 255, 0.1);
+transition: 300ms;
+
+}
+
+.hover-fx:after {
+
+    pointer-events: none;
+    position: absolute; 
+     width: 100%; 
+    height: 100%; 
+    border-radius: 50px;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+   top: 0;
+   left: 0;
+   opacity: 0;
+    transition: 300ms;
+  
+
+}
+.hover-fx:hover{
+    background-color: #fff;
+    color: #151515;
+}
+.hover-fx:hover:after{
+    opacity: 1;
+    transform: scale(1.15);
+}

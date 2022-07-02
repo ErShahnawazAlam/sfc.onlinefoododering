@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFC Online Food Order</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/index.css">
+
+    <link rel="icon" type="image/x-icon" href="Images/favIcon.jpg">
+</head>
+<body>
+
+    <div class="container-fluid ">
+       
+  
+        <nav class="navbar rounded navbar-expand-sm transparent navbar-inver shadow bg-light sticky-top">
+           
+
+
+                    <div class="collapse navbar-collapse text-white" id="menu">
+                        <a href="" class="navbar-brand immg ms-4 me-5">
+                            <img src="https://www.originalsfc.co.uk/images/SFC-Logo.png" style="max-width:120px; max-height: 120px;" >
+                        </a>
+                        <ul class="navbar-nav navbar-list d-flex justify-content-between ">
+                            <li class="nav-item active me-5 text-center">
+                                <a href="index.html" class="nav-link text-black ">
+                                    <span class="bi fs-4 bi-house-fill"></span>
+                                    Home
+                                  
+                                </a>
+                            </li>
+                            <li class="nav-item me-5 text-center">
+                                <a href="#about" class="nav-link text-black ">
+                                    <span class="bi fs-4 bi-person-workspace"></span>
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item me-5 text-center">
+                                <a href="#categories" class="nav-link text-black ">
+                                    <span class="bi fs-4 bi-box"></span>
+                                 Menu
+                                </a>
+                            </li>
+                            <li class="nav-item me-5 text-center">
+                                <a href="#contact" class="nav-link text-black" target="_blank">
+                                    <span class="bi fs-4 bi-telephone-fill"></span>
+                                    Contact
+                                </a>
+                            </li>
+
+                          
+                        
+                        </ul>
+                    </div>
+                        <div class="container-fluid d-flex ms-3">
+                            <button class="navbar-toggler bg-secondary  " data-bs-target="#menu" data-bs-toggle="collapse">
+                                <span class="text-white  navbar-toggler-icon grt "></span>
+                            </button>
+                            <div class="input-group w-100  ">
+                                <input type="text" class="form-control fs-5">
+                                <button class="btn btn-danger ">search</button>
+                                
+                            </div>
+
+                                <div class="dropdown me-4 ms-5">
+                                    <button class="btn btn-danger text-white m dropdown-toggle align-middle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class=" bi fs-5 bi-person-circle"></span> Sign In
+                                    </button>
+                                    <ul class="dropdown-menu bg-danger" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item text-white" href="login.html">
+                                                <span class="bi bi-box-arrow-in-right"></span> Sign In</a></li>
+                                        <li><a class="dropdown-item text-white" href="sign-up.html">
+                                                <span class="bi bi-person-plus-fill"></span>Sign Up</a></li>
+                                        <li><a class="dropdown-item text-white" href="forgot-pass.html">
+                                                <span class="bi bi-unlock-fill"></span>Change Password</a></li>
+                                    </ul>
+                                </div>
+                            
+                </div>
+            
+        </nav>
+
+        <header class="bg-dark text-white p-1 pt-3 text-center mt-3">
+           <p><b>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</b> <button class="btn btn-danger ms-3 rounded-pill p-2"><a href="SFC.html" class="text-decoration-none text-white">Select Order</button></a></p>
+            
+            
+        </header>
+        <div class=" bg-light ps-3 p-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="d-flex">
+                    <h1 class="text-danger"><b>WELCOME </b></h1>
+                    <h1 class="ms-3 text-dark"><b>TO SFC</b></h1> <br>
+                    </div>
+ 
+                        <blockquote class="mt-2">
+                            Welcome to www.sfcfood.com (“Website”). This Website is owned and operated by Turmeric Vision Private Limited (“Turmeric Vision”) and fully-owned by Chef Shahnawaz Alam. Turmeric Vision was conceptualized by Chef Sanjeev Kapoor. Turmeric Vision is India’s first Food Content Company that will create Food Content and Food Entertainment Brands to be distributed through multiple platforms like Television, Web, Mobile etc. The Website is also India’s first search and comparison site exclusively for shoppers of kitchen products like appliances, cookware, bakeware, knives, tools and accessories. The Website strives to make it easy for customers to find the best offers; with features such as product reviews, seller ratings, and personalized recommendations.
+                        </blockquote>   
+                
+                    <img class="mt-3" src="https://images.deliveryhero.io/image/fd-my/LH/ea7o-hero.jpg?width=4000&height=1000&quality=45"  width="100%">
+
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3093016.jpg" width="100%" >
+                </div>
+
+            </div>
+        </div>
+       </div>
+
+       <div id="silders" align="center">
+           <div class="justify-content-end d-flex me-5 fixed-bottom" >
+               <a href="index.html" class=""><button class="fs-4 border border-danger" ><b class="text-danger p-1"><span class="bi fs-4 bi-chevron-double-up"></span></b></button></a>
+           </div>
+       <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.jetstar.com/_/media/inspiration-hub/article-images/20feb/sri-lankatop-restaurants-colombo/srilanka_colombo_food_hero.jpg?rev=5cbab9bd26724b99b0340d35311f66fe&w=1050&rc=1&cw=1050&ch=590&cx=55&cy=0&hash=D602CD6FE7141019A2382F345CAAD6330931E456" height="550" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h1>The Best Insitute In <br> <span>Hyderabad</span> </h1> -->
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/fb/7f/0d/fb7f0db383ca73209da731802bb6fff1.jpg" height="550" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h1>The Best Insitute In <br> <span>Hyderabad</span> </h1> -->
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://d1ralsognjng37.cloudfront.net/c974c7c1-6332-4a65-8b5a-dcf92d3391df.jpeg"  height="550" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h1>The Best Insitute In <br> <span>Hyderabad</span> </h1> -->
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.cylex-uk.co.uk/companies/2722/4275/images/Zus-Ilford_465260_large.jpg"  height="550" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h1>The Best Insitute In <br> <span>Hyderabad</span> </h1> -->
+                    
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="job" id="categories">
+    <div class="row mb-5 ">
+        <div class="d-flex justify-content-center bg-danger mt-3">
+            <h3 class="fs-1 fw-bold text-white p-2" style="font-size: 24px;">Browse Categories</h3>
+        </div>
+        <div>
+            <a href="index.html" class="text-decoration-none "><button class="fs-5 w-100 p-1"><b class="text-danger">Back To Home <span class="bi fs-4 bi-chevron-double-up"> </span></b></button></a>
+       
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT86.jpg?ver=16.7" />
+                <h3 class="mt-1">Chicken Buckets</h3>
+
+                
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT200.jpg?ver=16.7" />
+                <h3 class="mt-1">NEW LAUNCH</h3>
+
+                
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT190.jpg?ver=16.7" />
+                <h3 class="mt-1">BIRYANI BUCKETS</h3>
+
+                
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT158.jpg?ver=16.7" />
+                <h3 class="mt-1">BOX MEALS</h3>
+
+                
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=16.7" />
+                <h3 class="mt-1">BURGERS</h3>
+
+                
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT178.jpg?ver=16.7" />
+                <h3 class="mt-1">STAY HOME SPECIALS</h3>
+
+                
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4  mt-4 text-center border-1 border-dark bg-danger text-white" style="width: 18rem; height: 250px;">
+             
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT89.jpg?ver=16.7" />
+                <h3 class="mt-1">SNACKS</h3>
+
+                
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="card card-s ms-4 mt-4 text-center " style="width: 18rem; height: 250px;">
+             
+                <img src="https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg" />
+
+                <p class="mt-5 ms-5">View All Menu <span class="bi bi-arrow-right"></span></p>
+
+                
+            </div>
+        </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="" id="about">
+
+    <div class="about1 bg-secondary">
+        <div class="row mb-5 pe-4 p-2 justify-content-between">
+           
+                <h3 class="fs-1 fw-bold text-white bg-danger text-center mt-2 p-1 " style="font-size: 22.5px;">On Our Buckets</h3>
+            
+            <div>
+                <a href="index.html" class="text-decoration-none "><button class="fs-5 w-100 p-1"><b class="text-danger">Back To Home <span class="bi fs-4 bi-chevron-double-up"> </span></b></button></a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/KFC-Care/Staff/kfc-staff.jpg" height="300" />
+                  <div class="mt-3 p-2">
+                    <h3>Heartfelt thanks to our Frontline Heroes</h3>
+                    <p>We may not be saving lives. We may not be changing the world either. But what we are doing is supporting those who are. It has been a privilege and an honour for us to be able to pledge more than 10,000 Thank You Meals to healthcare workers across Delhi, Pune, Bangalore, Hyderabad and Kolkata.</p>
+        
+                  </div>
+
+                    
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s  mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                 
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/KFC-Care/Tiles/feature-1.jpg" height="300" />
+                   <div class="mt-3">
+                    <div class="p-2">
+                        <h3>Our 4X Safety Promise</h3>
+                    <p>Our signature KFC offerings now come with the added assurance of our 4X Safety promise. We have upped our already stringent standards of safety and hygiene with increased focus on Screening, Sanitization, Social Distancing and Contactless service. To further safeguard the health and wellbeing of our team members as well as our customers, we are on a drive to vaccinate our team members, including delivery riders & restaurant managers, across 480+ restaurants in the country.</p>
+
+                    </div>
+                   </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s  mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                 
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/KFC-Care/Tiles/feature-2.jpg" height="300" />
+                   
+                    <div class="p-2">
+                        <h3 class="mt-1">Fighting child hunger - addHope</h3>
+                        <p>addHope is our pledge to fight child hunger in the country. Over the years we have made it our mission to spread the message of hope and feed underprivileged children, with your help. An additional INR 5 to your bill can get an underprivileged child a healthy, nutritious, and fulfilling meal! With the help of our partners, everyday more than 15000 children across centers in 21 cities are served meals, helping them be their best self.</p>
+   
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s  mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                 
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/KFC-Care/FAQs/faq-1.jpg"  height="300" />
+                    <div class="p-2">
+                        <h3 class="">Which hospitals are you serving meals to?</h3>
+                        <p>We have joined forces with our able partner - ResponseNet – who will undertake the distribution of kits of essential food items to communities in need in the identified regions. 
+                            With our Feed a Million Pledge we have till date provided more than 3 million meals to migrant workers and displaced families; helped strengthen medical infrastructure for 50 hospitals with medical supplies & essentials and administered Covid-19 relief to 15000 individuals with food relief and home care kits.
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s  mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                 
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/KFC-Care/Tiles/initiative-img.jpg"  height="300" />
+                  <div class="p-2 ">
+                    <h3 class="">India Sahyog Program</h3>
+                    <p>The foodservice industry has been reeling under the impact of the pandemic, and more so the small restaurants & local food businesses. With an aim to support local food businesses in the country, we announced KFC’s India Sahyog. Designed to help local and small food joints to revive their business as they work to overcome the impact of Covid-19, the program is executed in association with Food Safety and Standards Authority of India (FSSAI) and National Restaurant Association of India (NRAI).</p>
+                  </div>
+
+
+                    
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card card-s mt-4 text-center border-1 border-dark bg-danger text-white" style="max-width: 22.5rem; height: 600px;">
+                 
+                   
+                    <img src="https://about.kfc.co.in/assets/images/D/Heros/Home/Tiles/careers.jpg"  height="300" />
+                    <div class=" p-2">
+                    <h3 class="">Journey of fried chicken, through the ages</h3>
+                    <p>It all started with Colonel Harland Sanders creating a finger lickin’ good recipe more than 75 years ago. A list of secret herbs and spices scratched out on the back of his kitchen door, that continues to be followed across 145 countries, with more than 800,000 team members breading and freshly preparing bucket </p>
+                   </div>
+
+                    
+                </div>
+            </div>
+            
+
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Carousel wrapper -->
+<div id="carouselExampleControls" class="carousel slide text-center carousel-dark  mb-5" data-bs-ride="carousel">
+    <h2 class="text-danger mb-2">CUSTOMER FEEDBACK</h2>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+          style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>Photographer</p>
+            <p class="text-muted">
+              <!-- <i class="fa fa-quote-left pe-2"></i> -->
+              These were delicious. I did use regular carrots that I roll-cut into pieces - the so-called baby carrots are regular carrots cut down to size, which seems like a terrible waste. I air-fried them, so they had a grilled vibe. The butter-spice mix is delicious is and I think would be good on other vegetables, as well.
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-half bi-sm"></i></li>
+          </ul>
+      </div>
+      <div class="carousel-item">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+          style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">John Doe</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Prepared as described except I used 93% lean beef, so no need to drain, which allowed me to prepare it all in one shot in the skillet (with the exception of the mashed potatoes, which I prepared first). Tremendous flavor.
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+            <li><i class="bi fs-4 bi-star-half bi-sm"></i></li>
+          </ul>
+      </div>
+      <div class="carousel-item">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              This recipe was a great find. Quick and everyone loved it . It was a perfect answer for Friday night dinner. Will be making again I am eternally grateful for sharing of this recipe. Yes, it took a lot if time, but anything worth having is worth waiting and working for. Very easy to make. Thanks again!
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+          <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+          <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+          <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+          <li><i class="bi fs-4 bi-star-fill bi-sm"></i></li>
+          <li><i class="bi fs-4 bi-star-half bi-sm"></i></li>
+        </ul>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Carousel wrapper -->
+
+
+
+
+
+
+  <div class="container mt-5 mb-5 " id="contact">
+    <div class="d-flex justify-content-center">
+    
+        <h1 class="fs-1 text-danger">Contact</h1>
+    </div>
+    <div class="row gy-4">
+        <div class="col-xs-12 col-sm-6">
+            <div class="row  mt-3 gy-4">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="info-box">
+                        <i class="text-danger fs-1 bi bi-geo-alt"></i>
+                        <h3>Address</h3>
+                        <p>Durga Bhavani Complex, <br> 2nd Floor, <br> Satyam Theatre Rd, <br> Gayatri Nagar,
+                            <br>
+                            Ameerpet, Hyderabad, <br>
+                            Telangana 500016 .
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="info-box">
+                        <i class="text-danger fs-1 bi bi-telephone"></i>
+                        <h3>Call Us</h3>
+                        <p>
+                            <strong>Phone:</strong>
+                            <a href="tel:040 2374 6666">040 2374 6666</a> <br>
+                            <strong>WhatsApp/Call:</strong>
+                            <a href="tel:+91-8179191999">+91-7903561228</a> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  gy-4">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="info-box">
+                        <i class="text-danger fs-1 bi bi-envelope"></i>
+                        <h3>Email</h3>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:support@sfc.com">support@sfc.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="info-box">
+                        <i class="text-danger fs-1 bi bi-clock"></i>
+                        <h3>Time</h3>
+                        <p>6am–9:30pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 d-flex justify-content-center">
+            <div class="contact-form ">
+                <form class="text-center" action="" >
+                    <div class="form-group contact-element  input-group mt-5">
+                        <span class="bi bi-person-fill fs-2 input-group-text pt-3 pb-3"></span>
+                        <input type="text" name=" " class="form-control px-3" placeholder="Name" id="">
+                    </div>
+                    <div class="input-group contact-element mt-4">
+                        <span class="bi bi-envelope-fill fs-2 input-group-text pt-3 pb-3"></span>
+                        <input type="email" name="email" class="form-control px-3" placeholder="Email" id="">
+                    </div>
+                    <div class="input-group contact-element mt-4">
+                        <span class="bi bi-chat-square-fill fs-2 input-group-text pt-3 pb-3"></span>
+                        <textarea name="" id="" cols="80" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group mt-4 d-flex justify-content-center form-submit ">
+                        <button
+                            class="form-control pt-2 fs-5 fw-regular w-25 pb-2 btn btn-danger">Submit</button>
+                    </div>
+                     
+                </form>
+                <div class="mt-3">
+                    <a href="index.html" class="text-decoration-none "><button class="fs-5 w-100 p-1"><b class="text-danger">Back To Home <span class="bi fs-4 bi-chevron-double-up"> </span></b></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="contaner-fluid bg-dark text-white footer shadow-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2">
+               
+                <div class="social-links mt-2">
+                    <img src="https://www.originalsfc.co.uk/images/SFC-Logo.png"  width="150" height="150">
+                </div>
+                <div class="wrapper">
+                    <a href="#" class="facebook hover-fx"><i class="bi fs-4 bi-facebook text-primary "></i></a>
+                    <a href="#" class="twitter hover-fx"><i class="bi fs-4 bi-google text-danger "></i></a>
+                    <a href="#" class="instagram hover-fx"><i class="bi fs-4 bi-twitter text-primary"></i></a>
+                    <a href="#" class="linkedin hover-fx"><i class="bi fs-4 bi-youtube text-danger"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h2 class="text-danger">HELP DESK</h2>
+                <div class="mt-2">
+                    <div>
+                       
+                        <ul class="mt-1  px-1" style="list-style-type:none;">
+                            <li class="fw-bold mt-2">SFC Food</li>
+                            <li class="fw-bold mt-2">Menu</li>
+                            <li class="fw-bold mt-2">Order LookUp</li>
+                            <li class="fw-bold mt-2">Gift Card</li>
+                            <li class="fw-bold mt-2">Disclaimer</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <div class="mt-2">
+                    <ul class="mt-5  px-1" style="list-style-type:none;">
+                        <li class="fw-bold mt-2">Support</li>
+                        <li class="fw-bold mt-2">Get Help</li>
+                        <li class="fw-bold mt-2">Contact Us</li>
+                        <li class="fw-bold mt-2">SFC Feedback</li>
+                        <li class="fw-bold mt-2">Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <div class="mt-2">
+                    <ul class="mt-5  px-1" style="list-style-type:none;">
+                        <li class="fw-bold mt-2">SFC India</li>
+                        <li class="fw-bold mt-2">About SFC</li>
+                        <li class="fw-bold mt-2">SFC Care</li>
+                        <li class="fw-bold mt-2">Career</li>
+                        <li class="fw-bold mt-2">Our Golden Past</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="contact-us mt-2 ">
+                    <h6 class="text-danger">Contact Us :</h6>
+                    <p class="">
+                        Durga Bhavani Complex, <br> 2nd Floor, <br> Satyam Theatre Rd, <br> Gayatri Nagar, <br>
+                        Ameerpet, Hyderabad, <br>
+                        Telangana 500016 . <span class="bi bi-pin-map-fill text-warning"></span><br>
+                        <strong>Phone:</strong>
+                        <a href="tel:040 2374 6666">040 2374 6666</a> <br>
+                        <strong>Email:</strong>
+                        <a href="mailto:support@nareshit.com">support@nareshit.com</a><br>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-dark text-center text-white mt-1 mb-3">
+        <h3>Copyright <span class="fs-3">&copy;</span> SFC Corporation 2022 All Rights Reserved</h3>
+    </div>
+
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
